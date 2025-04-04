@@ -1,0 +1,23 @@
+<!DOCTYPE html >
+<html lang="fr">
+    <head>
+        <title>Extracteur d'emails</title>
+    </head>
+    <body>
+        <h2>Entrez un texte pour extraire les emails: </h2>
+        <form method="POST">
+            <textarea name="text" rows="5" cols="40"></textarea>
+            <br><br>
+            <input type="submit" value="Extraire">
+        </form>
+
+        {% if emails %}
+            <h3>Emails trouvés: </h3>
+            <ul>
+                {% for email in emails %}
+                    <li> {{email}} </li>
+                {% endfor %}
+            </ul>
+        {% endif %}
+    </body>
+</html>
