@@ -1,5 +1,5 @@
-# email_extractor
-Email Extractor est un outil Python permettant d'extraire des adresses email à partir de pages web ou de fichiers texte. Il utilise les expressions régulières pour identifier et extraire les emails, et Playwright pour le scraping web. Ce projet est idéal pour récupérer des adresses email à partir de différentes sources.
+# mailgrab
+**mailgrab** est un outil Python permettant d'extraire des adresses email à partir de pages web ou de fichiers texte. Il utilise les expressions régulières pour identifier et extraire les emails, et Playwright pour le scraping web. Ce projet est idéal pour récupérer des adresses email à partir de différentes sources.
 
 ## Fonctionnalités
 
@@ -11,40 +11,41 @@ Email Extractor est un outil Python permettant d'extraire des adresses email à 
 
 ## Installation
 
-Avant d'utiliser **Email Extractor**, assure-toi que Python 3.x est installé sur ta machine.
+Avant d'utiliser **mailgrab**, assure-toi que Python 3.x est installé sur ta machine.
 
 ### Étapes d'installation :
 
 1. **Cloner le dépôt** :
 
-   ```bash
-   git clone https://github.com/nanaelie/email_extractor.git
-   ```
+    ```bash
+    git clone https://github.com/nanaelie/mailgrab.git
+    ```
 
-2. **Installer les dépendances** :
+2. **Installer les dépendances** et installer globalement :
 
    Accède au répertoire du projet et installe les dépendances nécessaires :
 
    ```bash
-   cd email_extractor
-   pip install -r requirements.txt
+   cd mailgrab
+   pip install .
    ```
 
-   > **Remarque** : Assure-toi que Playwright est correctement installé. Tu peux également avoir besoin de télécharger les navigateurs utilisés par Playwright avec cette commande :
+   > **Remarque** : Assurez-vous que Playwright est correctement installé. Vous pourriez également avoir besoin de télécharger les navigateurs utilisés par Playwright avec cette commande :
+
    ```bash
    python -m playwright install
    ```
 
 ## Utilisation
 
-**Email Extractor** fonctionne en ligne de commande et accepte deux types d'entrées : une URL de site web ou un chemin vers un fichier texte.
+**mailgrab** fonctionne en ligne de commande et accepte deux types d'entrées : une URL de site web ou un chemin vers un fichier texte.
 
 ### Extraire des emails depuis une URL
 
-Si tu souhaites extraire des emails d'une page web, utilise l'option `--url` et fournis l'URL du site :
+Si tu souhaites extraire des emails d'une page web, utilise la commande `mailgrab` et fournis l'URL du site :
 
 ```bash
-python email_extractor.py --url "https://example.com"
+mailgrab --url "https://example.com"
 ```
 
 Cela extraira les adresses email présentes sur la page web à l'URL spécifiée.
@@ -54,26 +55,28 @@ Cela extraira les adresses email présentes sur la page web à l'URL spécifiée
 Pour extraire des emails à partir d'un fichier texte, utilise l'option `--file` et fournis le chemin du fichier :
 
 ```bash
-python email_extractor.py --file "chemin/vers/le/fichier.txt"
+mailgrab --file "chemin/vers/le/fichier.txt"
 ```
 
 Cela extraira les adresses email présentes dans le fichier texte.
 
 ### Options disponibles
 
-- `--url <url>` : URL du site web à partir duquel les emails seront extraits.
-- `--file <chemin_du_fichier>` : Chemin vers un fichier texte pour extraire les emails.
+* `--url <url>` : URL du site web à partir duquel les emails seront extraits.
+* `--file <chemin_du_fichier>` : Chemin vers un fichier texte pour extraire les emails.
 
 ### Exemple d'exécution :
 
 **Depuis une URL** :
+
 ```bash
-python email_extractor.py --url "https://example.com"
+mailgrab --url "https://example.com"
 ```
 
 **Depuis un fichier** :
+
 ```bash
-python email_extractor.py --file "texte_emails.txt"
+mailgrab --file "texte_emails.txt"
 ```
 
 ## Validation des chemins de fichiers
@@ -82,7 +85,7 @@ Le script vérifie que le chemin du fichier passé en argument existe, est un fi
 
 ## Contribuer
 
-Si tu souhaites contribuer à **Email Extractor**, voici les étapes à suivre :
+Si tu souhaites contribuer à **mailgrab**, voici les étapes à suivre :
 
 1. Fork ce dépôt.
 2. Crée une nouvelle branche (`git checkout -b ma-nouvelle-fonctionnalité`).
@@ -98,3 +101,14 @@ Ce projet est sous licence MIT - consulte le fichier [LICENSE](LICENSE) pour plu
 ## Contact
 
 Si tu as des questions, des suggestions ou des problèmes, n'hésite pas à ouvrir une issue sur le dépôt GitHub ou à me contacter directement.
+
+````
+
+### 3. **Utilisation après installation**
+
+Une fois installé globalement via pip, l'utilisateur pourra simplement utiliser la commande `mailgrab` dans le terminal :
+
+```bash
+mailgrab --url "https://example.com"
+````
+

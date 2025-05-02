@@ -1,8 +1,9 @@
 from setuptools import setup, find_packages
 from mailgrab.__version__ import __version__
+
 setup(
     name='mailgrab',
-    version=__sersion__,
+    version=__version__,
     author='nae.devp',
     author_email='nae.devp@gmail.com',
     description='Un outil Python pour extraire des adresses email depuis des pages web ou des fichiers texte.',
@@ -16,7 +17,7 @@ setup(
     ],
     entry_points={
         'console_scripts': [
-            'mailgrab=mailgrab:main',
+            'mailgrab=mailgrab.mailgrab:main',
         ],
     },
     classifiers=[
