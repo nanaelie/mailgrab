@@ -40,6 +40,18 @@ Avant d'utiliser **mailgrab**, assure-toi que Python 3.x est installé sur ta ma
 
 **mailgrab** fonctionne en ligne de commande et accepte deux types d'entrées : une URL de site web ou un chemin vers un fichier texte.
 
+    ```bash
+    $ mailgrab --help                                               
+    usage: mailgrab [-h] (--url WEBSITE_URL | --file PATH_TO_FILE)
+
+    Collection of emails in text file or website page.
+
+    options:
+      -h, --help           show this help message and exit
+      --url WEBSITE_URL    Website url to read and extract emails
+      --file PATH_TO_FILE  Path to file to read and extract emails
+    ```
+
 ### Extraire des emails depuis une URL
 
 Si tu souhaites extraire des emails d'une page web, utilise la commande `mailgrab` et fournis l'URL du site :
