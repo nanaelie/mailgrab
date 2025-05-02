@@ -101,14 +101,3 @@ Ce projet est sous licence MIT - consulte le fichier [LICENSE](LICENSE) pour plu
 ## Contact
 
 Si tu as des questions, des suggestions ou des problèmes, n'hésite pas à ouvrir une issue sur le dépôt GitHub ou à me contacter directement.
-
-````
-
-### 3. **Utilisation après installation**
-
-Une fois installé globalement via pip, l'utilisateur pourra simplement utiliser la commande `mailgrab` dans le terminal :
-
-```bash
-mailgrab --url "https://example.com"
-````
-
