@@ -1,3 +1,12 @@
+[![PyPI Downloads](https://static.pepy.tech/badge/mailgrab)](https://pepy.tech/projects/mailgrab)
+![PyPI](https://img.shields.io/pypi/v/mailgrab?style=flat-square)
+![GitHub Repo stars](https://img.shields.io/github/stars/nanaelie/mailgrab?style=flat-square)
+![GitHub forks](https://img.shields.io/github/forks/nanaelie/mailgrab?style=flat-square)
+![GitHub issues](https://img.shields.io/github/issues/nanaelie/mailgrab?style=flat-square)
+![GitHub last commit](https://img.shields.io/github/last-commit/nanaelie/mailgrab?style=flat-square)
+![License](https://img.shields.io/github/license/nanaelie/mailgrab?style=flat-square)
+![Python](https://img.shields.io/badge/python-3.x-blue?style=flat-square)
+
 # mailgrab
 **mailgrab** est un outil Python permettant d'extraire des adresses email à partir de pages web ou de fichiers texte. Il utilise les expressions régulières pour identifier et extraire les emails, et Playwright pour le scraping web. Ce projet est idéal pour récupérer des adresses email à partir de différentes sources.
 
