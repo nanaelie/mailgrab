@@ -26,40 +26,40 @@ Avant d'utiliser **mailgrab**, assure-toi que Python 3.x est installé sur ta ma
 
 1. **Cloner le dépôt** :
 
-    ```bash
-    git clone https://github.com/nanaelie/mailgrab.git
-    ```
+```bash
+git clone https://github.com/nanaelie/mailgrab.git
+```
 
 2. **Installer les dépendances** et installer globalement :
 
    Accède au répertoire du projet et installe les dépendances nécessaires :
 
-   ```bash
-   cd mailgrab
-   pip install .
-   ```
+```bash
+cd mailgrab
+pip install .
+```
 
    > **Remarque** : Assurez-vous que Playwright est correctement installé. Vous pourriez également avoir besoin de télécharger les navigateurs utilisés par Playwright avec cette commande :
 
-   ```bash
-   python -m playwright install
-   ```
+```bash
+python -m playwright install
+```
 
 ## Utilisation
 
 **mailgrab** fonctionne en ligne de commande et accepte deux types d'entrées : une URL de site web ou un chemin vers un fichier texte.
 
-    ```bash
-    $ mailgrab --help                                               
-    usage: mailgrab [-h] (--url WEBSITE_URL | --file PATH_TO_FILE)
+```bash
+$ mailgrab --help                                               
+usage: mailgrab [-h] (--url WEBSITE_URL | --file PATH_TO_FILE)
 
-    Collection of emails in text file or website page.
+Collection of emails in text file or website page.
 
-    options:
-      -h, --help           show this help message and exit
-      --url WEBSITE_URL    Website url to read and extract emails
-      --file PATH_TO_FILE  Path to file to read and extract emails
-    ```
+options:
+    -h, --help           show this help message and exit
+    --url WEBSITE_URL    Website url to read and extract emails
+    --file PATH_TO_FILE  Path to file to read and extract emails
+```
 
 ### Extraire des emails depuis une URL
 
