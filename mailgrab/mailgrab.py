@@ -28,7 +28,7 @@ def get_url_ctn(url: str):
             page = browser.new_page()
             page.goto(url)
             page.wait_for_load_state("networkidle")
-            time.sleep(2)
+            time.sleep(20)
         except playwright.sync_api.Error:
             sys.exit("Connection error: check your network and retry")
 
