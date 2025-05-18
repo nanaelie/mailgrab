@@ -1,0 +1,2 @@
+class MailgrabError(Exception):
+    pass
