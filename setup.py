@@ -1,9 +1,18 @@
 from setuptools import setup, find_packages
-from mailgrab.__version__ import __version__
+
+import re
+
+def get_version():
+    with open("mailgrab/__version__.py", "r") as f:
+        content = f.read()
+    version_match = re.search(r'^__version__\s*=\s*[\'"]([^\'"]*)[\'"]', content, re.M)
+    if version_match:
+        return version_match.group(1)
+    raise RuntimeError("Version not found")
 
 setup(
     name='mailgrab',
-    version=__version__,
+    version=get_version(),
     author='nae.devp',
     author_email='nae.devp@gmail.com',
     description='Un outil Python pour extraire des adresses email depuis des pages web ou des fichiers texte.',
