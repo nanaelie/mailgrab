@@ -4,11 +4,8 @@
 ![GitHub last commit](https://img.shields.io/github/last-commit/nanaelie/mailgrab?style=flat-square)
 ![License](https://img.shields.io/github/license/nanaelie/mailgrab?style=flat-square)
 ![Python](https://img.shields.io/badge/python-3.x-blue?style=flat-square)
-<p>
-    <a href="#">
-        <img align="right" src="https://komarev.com/ghpvc/?username=nanaelie&label=Visitors&color=0e75b6&style=flat" alt="Visitor" />
-    </a>
-</p>
+
+![Visitors](https://komarev.com/ghpvc/?username=nanaelie&label=Visitors&color=0e75b6&style=flat)
 
 
 # mailgrab
