@@ -24,8 +24,8 @@ def validate_path(file_path):
         raise MailgrabError(f"Error opening '{file_path}': Path doesn't exists")
 
 def get_url_ctn(url: str):
-    import playwright
     from playwright.sync_api import sync_playwright
+    import playwright
     
     with sync_playwright() as p:
         try:
