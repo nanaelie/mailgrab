@@ -1,6 +1,5 @@
 [![PyPI Downloads](https://static.pepy.tech/badge/mailgrab)](https://pepy.tech/projects/mailgrab)
 ![PyPI](https://img.shields.io/pypi/v/mailgrab?style=flat-square)
-![GitHub forks](https://img.shields.io/github/forks/nanaelie/mailgrab?style=flat-square)
 ![GitHub issues](https://img.shields.io/github/issues/nanaelie/mailgrab?style=flat-square)
 ![GitHub last commit](https://img.shields.io/github/last-commit/nanaelie/mailgrab?style=flat-square)
 ![License](https://img.shields.io/github/license/nanaelie/mailgrab?style=flat-square)
