@@ -5,9 +5,6 @@
 ![License](https://img.shields.io/github/license/nanaelie/mailgrab?style=flat-square)
 ![Python](https://img.shields.io/badge/python-3.x-blue?style=flat-square)
 
-![Visitors](https://komarev.com/ghpvc/?username=nanaelie&label=Visitors&color=0e75b6&style=flat)
-
-
 # mailgrab
 
 **mailgrab** is a Python tool designed to extract email addresses from web pages or text files. It uses regular expressions for email extraction and Playwright for web scraping. This tool is perfect for collecting email addresses from multiple sources.
