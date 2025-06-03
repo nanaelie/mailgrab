@@ -35,7 +35,7 @@ python -m playwright install
 
 ### CLI (Command Line)
 
-```bash
+```sh
 $ mailgrab --help                            
 usage: mailgrab [-h] (--url WEBSITE_URL | --file PATH_TO_FILE) [-v]
 
