@@ -38,7 +38,7 @@ def get_url_ctn(url: str):
             print("Error: ", e)
             sys.exit(1)
 
-        content = page.locator("body").inner_text()
+        content = page.locator("body").inner_html()
         browser.close()
 
         content = content.splitlines()
