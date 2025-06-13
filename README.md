@@ -12,6 +12,7 @@
 ## Features
 
 - Extracts email addresses from a URL or text file
+- Extracts emails from `mailto:` links in HTML
 - Uses **Playwright** for headless web scraping
 - Searches with **regular expressions**
 - Simple **command-line interface (CLI)**
