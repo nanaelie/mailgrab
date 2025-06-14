@@ -13,3 +13,8 @@
 - Internal error handling improved using mailgrab exception (MailgrabError).
 - Bumped version to 1.2.0 in `__version__.py`.
 
+## [v1.3.0] - 2025-06-13
+
+### Added
+- Added emails extraction from `mailto:` feature
+
